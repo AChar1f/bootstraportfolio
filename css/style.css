@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: black;
+    --secondary-color: grey;
+    --third-color: white;
+    --mainBox-shadow: .2rem .2rem .1rem .2rem rgba(0, 0, 0, 0);
+    --card-box-shadow: .5vw .5vw 1vw rgba(silver); 
+    --text-shadow: .3rem .3rem .4rem rgba(255, 255, 255, 255); 
+    --bgImg: linear-gradient(to bottom, black 100%, white 25%);
+    --mainBg: black 100%, #A29D95 25%;
+}
