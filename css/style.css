@@ -9,10 +9,33 @@
 :root {
     --primary-color: black;
     --secondary-color: grey;
-    --third-color: white;
+    --third-color: #A29D95;
     --mainBox-shadow: .2rem .2rem .1rem .2rem rgba(0, 0, 0, 0);
     --card-box-shadow: .5vw .5vw 1vw rgba(silver); 
     --text-shadow: .3rem .3rem .4rem rgba(255, 255, 255, 255); 
     --bgImg: linear-gradient(to bottom, black 100%, white 25%);
     --mainBg: black 100%, #A29D95 25%;
+}
+.navbar { 
+    background-color: black;
+    font-family: sans-serif;
+    border-bottom: 2px red solid;
+}
+img[alt='logo'] {
+    aspect-ratio: 1/1;
+    width: 75px;
+}
+
+.nav-link{
+    color : var(--secondary-color); 
+    &:hover {
+        color: whitesmoke;
+        text-decoration: underline;
+        &:active {
+            color: var(--third-color);
+        }
+    }
+}
+
+@media (min-width: 992px){
 }
