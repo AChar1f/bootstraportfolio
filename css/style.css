@@ -95,14 +95,16 @@ img[alt='profileImage'] {
 }
 
 .resumecontainer {
-    display: flex;
-    align-items: center;
-    text-align: center;
+    &:hover{
+        text-decoration:2px silver underline;
+    }
 }
+
 .redu {
-    display: flex;
-    text-align: center;
-    border: 3px solid #A29D95;
+    border:5px solid whitesmoke;  
+    &:hover{
+        text-decoration: 2px silver underline;
+    } 
 }
 
 /* Reach Me Section */
