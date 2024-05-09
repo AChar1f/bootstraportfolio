@@ -10,8 +10,6 @@
     scroll-behavior: smooth;
 }
 
-@media (min-width: 992px) {}
-
 :root {
     --primary-color: black;
     --secondary-color: grey;
@@ -34,7 +32,7 @@ body {
 /* Navbar */
 .navbar {
     background-color: black;
-    font-family: "Roboto Serif", serif, sans-serif;
+    font-family: "Roboto Serif", "Roboto", serif, sans-serif;
     border-bottom: 2px #A29D95 solid;
    
 }
@@ -46,6 +44,8 @@ img[alt='logo'] {
 
 .nav-link {
     color: whitesmoke;
+    font-size: 21px;
+    font-weight: 500;
 
     &:hover {
         color: silver;
@@ -70,24 +70,84 @@ img[alt='profileImage'] {
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
-    width: 100%;
     background-image: linear-gradient(180deg, black 65%,#232323) ;
 }
 
 .profileimage {
     border: 3px solid silver;
+    animation-name: welcome;
+    animation-duration: 35s;
+    animation-delay: 0s;
+    position: relative;
+    animation-direction: alternate;
+    
 }
+
+@keyframes welcome{
+    0%{
+        left: -800px;
+        top: 0px;
+    }
+  
+    25%{
+        left: 0px;
+        top: 0px;
+  
+    }
+  
+    50%{
+        left: 0px;
+       top:0px;
+  
+    }
+  
+    75%{
+        top: 0px;
+        left: 0px 
+     }
+  
+     100%{
+        left: 0px;
+        top: 0px;
+    
+     }     
+    } 
+    
+    @media screen and (max-width: 720px) {
+        .profileimage {animation: none;} 
+    }
+
 /* Name and Occupation */
 .title {
     width: fit-content;
     color: whitesmoke;
-
+  opacity: 1;
+  animation-name: rightFadeInOut;
+  animation-delay: 0s;
+  animation-duration: 15s;
 }
+@keyframes rightFadeInOut {
+    0% {
+      right: -3rem;
+      opacity: 0;
+    }
+  
+    75% {
+      right: 10rem;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 1;
+      right: 10rem;
+    }
+ }
 
 /* About */
 #about {
     position: relative;
     height: 100vh;
+    padding-top: 110px;
 }
 #bg-opacity {
     position: absolute;
@@ -99,15 +159,16 @@ img[alt='profileImage'] {
 }
 
 .aboutbg {
-    color: white
+    color: white;
     margin-top: 15px;
     text-align: center;
 }
 .aboutMe{ 
     display: flex;
     flex-flow: column wrap;
-    text-align: end;
-    width: 90%;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
     margin-inline: auto;
     background-color: rgb(255, 255, 255, 0.1);
     box-shadow: var(--mainBox-shadow);
@@ -134,7 +195,9 @@ th {
 }
 
 
-
+#skills {
+    padding-top: 100px;
+}
 .skills {
     display: flex;
     justify-content: center;
@@ -151,18 +214,18 @@ th {
     text-align: center; 
 }
 /* Resume */
+#resume {
+    padding-top: 110px;
+}
+
 .resumecontainer {
     margin-top: 15px;
-    &:hover{
-        text-decoration:2px silver underline;
-    }
+
 }
 
 .redu {
     border:5px solid whitesmoke;  
-    &:hover{
-        text-decoration: 2px silver underline;
-    } 
+
 }
 
 #cvbtn {
@@ -174,6 +237,9 @@ th {
 }
 
 /* Projects */
+#projects {
+    padding-top: 110px;
+}
 .pc{
     margin-top: 15px;
     text-align: center;
@@ -192,6 +258,9 @@ th {
 }
 
 /* Testimonials */
+#testimonials {
+    padding-top: 110px;
+}
 img[alt='dp'] {
     aspect-ratio: 1 / 1 ;
     border: 5px solid darkslategray;
@@ -201,20 +270,25 @@ img[alt='dp'] {
     width: 18rem;
     background-color: darkgray;
     margin-inline: auto;
+    padding-top: 5px;
 }
 
 .card-body-t {
     text-align: center;
     background-color:rgb(33, 42, 42);
     color: white;
-    font-size: x-small;
-    height: 14rem;
+    font-size: 12px;
+    height: 16rem;
     border: 5px double #A29D95;
-    
-   
-    &:hover{
-        text-decoration: underline #A29D95;
-    }
+
+}
+
+.card-text-t {
+    margin-top: 3px;
+}
+
+img[alt='ap'] {
+    height: 300px
 }
 
 /* Reach Me Section */
@@ -222,6 +296,7 @@ img[alt='dp'] {
     display: flex;
     align-items: center;
     text-align: center;
+    padding-top: 120px;
 }
 
 input, 
@@ -232,10 +307,15 @@ height: 2rem;
 width: 18rem;
 }
 
+#message {
+    height: 10rem;
+}
+
+
 .bi-telephone-inbound, .bi-envelope-at-fill, .bi-github {
     color : white;
     background-color: black;
-    font-family: sans-serif;
+    font-family: "roboto serif", sans-serif;
 }
 .github-profile {
     text-decoration: none;
@@ -257,8 +337,11 @@ width: 18rem;
     align-items: center;
     gap: 1rem;
     width: 100%;
-    font-size: small;
-    
+    font-size: small;  
+}
+
+aside {
+    margin-top: 75px;
 }
 
 label {
@@ -267,9 +350,11 @@ label {
 .formbuttons {
     display: flex;
     & button {
+        height: 40px;
+        width: 90px;   
         margin-inline: 20px;
         padding-inline: 25px;
-        border-radius: 45px 35px 45px 35px;
+        border-radius: 5px;
         background-color: #A29D95;
         color: white;
         &:hover {
