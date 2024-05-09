@@ -23,6 +23,7 @@ body {
     color: white;
     width: 100vw;
     overflow-x: hidden;
+    font-family: "Roboto Serif", serif;
 }
 /* Navbar */
 .navbar {
@@ -124,6 +125,29 @@ img[alt='profileImage'] {
     margin: 10px;
 }
 
+/* Testimonials */
+img[alt='dp'] {
+    aspect-ratio: 1 / 1 ;
+    border-radius: 90px 90px 0 0;
+}
+
+.card {
+    width: 18rem;
+}
+
+.card-body-t {
+    text-align: center;
+    background-color:rgb(33, 42, 42);
+    color: silver;
+    font-size: x-small;
+    height: 13rem;
+    border: 5px double #A29D95;
+    
+   
+    &:hover{
+        text-decoration: underline #A29D95;
+    }
+}
 
 /* Reach Me Section */
 .rmecontainer{
