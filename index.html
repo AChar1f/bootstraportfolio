@@ -12,7 +12,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
     rel="stylesheet">
-
   <title>My Portfolio</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="shortcut icon" href="https://achar1f.github.io/projectimages/images/Logo1.jpg" type="image/x-icon" />
@@ -32,22 +31,25 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#home">Home</a>
+            <a class="nav-link mx-3" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link mx-3" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#resume">Resume</a>
+            <a class="nav-link mx-3" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link mx-3" href="#resume">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testimonials">Testimonials</a>
+            <a class="nav-link mx-3" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#reachMe">Reach Me</a>
+            <a class="nav-link mx-3" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="#reachMe">Reach Me</a>
           </li>
         </ul>
       </div>
@@ -56,32 +58,33 @@
 
   <main class="container-fluid">
     <section class="container-fluid" id="home">
-      <div class="row landing">
+      <div class="row landing text-center">
         <img class="profileimage" src="https://achar1f.github.io/projectimages/images/me.png" alt="profileImage"
           loading="lazy" />
         <div class="title">
           <h2 class="mainheading">Abdurahmaan Charif</h2>
-          <h3 class="subheading">Aspiring Developer</h3>
+          <h3 class="subheading">Aspiring Fullstack Developer</h3>
         </div>
       </div>
     </section>
+    
     <!-- About -->
     <section class="container" id="about">
       <div id="bg-opacity"></div>
       <div class="row aboutbg">
-        <div class="col-md-10">
-          <h2 class="display-3">About</h2>
+        <div class="col">
+          <h2>About</h2>
           <h4>Who is Abdurahmaan?</h4>
           <div>
-            <p class="aboutMe">Abdurahmaan is a highly-disciplined and driven young man that resides in Cape Town,
+            <p class="aboutMe">I am a highly-disciplined and driven young man that resides in Cape Town,
               Surrey Estate. A brother to many and a teacher to some, my journey embodies resilience and a commitment to
               self-improvement. Graduating from Leadership College Primrose Park in 2019, I pursued excellence by
               rewriting my matric exams in 2020, achieving a bachelor's pass. My determination led me to explore various
               fields before securing my first job as an Educator Assistant at Habibia Primary School in late 2021. This
               experience not only enhanced my professional skills but also nurtured personal growth. Remaining
               undeterred, I transitioned to the role of a cross-trained Sales Executive at YDE and Truworths, where I
-              honed my sales acumen. Departing in mid-2023 I reignited my passion for technology and embarked on a new
-              chapter, later discovering Life Choices , a opportunity poised to further enrich my journey of learning
+              honed my sales acumen. Departing in mid-2023, I reignited my passion for technology and embarked on a new
+              chapter, later discovering Life Choices an opportunity poised to further enrich my journey of learning
               and development in the technolgical field</p>
           </div>
         </div>
@@ -100,8 +103,8 @@
                 <tr>
                   <th>Problem-Solving<i class="bi bi-gear-wide-connected"></i></th>
                   <th>Computer Skills<i class="bi bi-pc-display"></i></th>
-                  <th>HTML<i class="bi bi-filetype-html"></i></th>
                   <th>Time Management<i class="bi bi-hourglass-split"></i></th>
+                  <th>HTML<i class="bi bi-filetype-html"></i></th>
                   <th>CSS<i class="bi bi-filetype-css"></i></th>
                 </tr>
               </thead>
@@ -111,9 +114,9 @@
                     exceptional results.</td>
                   <td>Intermediate Level: I bring a solid foundation of understanding and a growing proficiency in
                     various hardware, software applications and technical tools.</td>
-                  <td>Beginner Level: While I may be in the early stages of my HTML journey, I am enthusiastic about
-                    honing my skills and mastering best practices in web design and development.</td>
-                  <td>Intermediate Level: I consistently deliver high-quality results within established timelines.</td>
+                    <td>Intermediate Level: I consistently deliver high-quality results within established timelines.</td>
+                    <td>Beginner Level: While I may be in the early stages of my HTML journey, I am enthusiastic about
+                      honing my skills and mastering best practices in web design and development.</td>
                   <td>Beginner Level:I am enthusiastic about further honing my skills and exploring advanced CSS
                     features to enhance user experiences and contribute effectively to web development projects.</td>
                 </tr>
@@ -129,9 +132,6 @@
     <section class="container" id="resume">
       <div class="row resumecontainer text-center">
         <h2>Resume</h2>
-      </div>
-      <div class="col d-flex justify-content-end">
-        <button type="button" id="cvbtn">Download CV</button>
       </div>
       <div class="row redu my-2">
         <div class="col-md-6 d-flex justify-content-start align-items-center flex-column">
@@ -157,11 +157,10 @@
     </section>
 
     <!-- Project Section -->
-    <section class="container" id="projects">
-      <div class="row pc">
+    <section class="container text-center" id="projects">
         <h2>Projects</h2>
         <div class="row projects-container gy-4">
-          <div class="card">
+          <div class="card col-md-4">
             <img src="https://achar1f.github.io/projectimages/images/coffee-icon.png" class="card-img-top img-fluid"
               loading="lazy" alt="dp">
             <div class="card-body">
@@ -171,7 +170,7 @@
               <a href="https://fcc-cafemenu.vercel.app/" target="_blank" class="btn bg-light">Vercel</a>
             </div>
           </div>
-          <div class="card">
+          <div class="card col-md-4">
             <img src="https://achar1f.github.io/projectimages/images/keyboardbasicflat_106016.png"
               class="card-img-top img-fluid" loading="lazy" alt="dp">
             <div class="card-body">
@@ -181,7 +180,7 @@
               <a href="https://keyboard-zeta.vercel.app/" target="_blank" class="btn bg-light">Vercel</a>
             </div>
           </div>
-          <div class="card">
+          <div class="card col-md-4">
             <img src="https://achar1f.github.io/projectimages/images/cat.png" class="card-img-top img-fluid"
               loading="lazy" alt="dp">
             <div class="card-body">
@@ -191,7 +190,7 @@
               <a href="https://fcc-catapp.vercel.app/" target="_blank" class="btn bg-light">Vercel</a>
             </div>
           </div>
-          <div class="card">
+          <div class="card col-md-4">
             <img src="https://achar1f.github.io/projectimages/images/512x512.png" class="card-img-top img-fluid"
               alt="dp">
             <div class="card-body">
@@ -201,7 +200,7 @@
               <a href="https://calculator-kappa-five-80.vercel.app/" target="_blank" class="btn bg-light">Vercel</a>
             </div>
           </div>
-          <div class="card">
+          <div class="card col-md-4">
             <img src="https://achar1f.github.io/projectimages/images/hulu-icon.png" class="card-img-top img-fluid"
               alt="dp">
             <div class="card-body">
@@ -222,11 +221,11 @@
       <div class="row gy-4">
         <div class="card col-md-4">
           <img src="https://achar1f.github.io/projectimages/images/ziziphoc.png"
-            class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="dp">
+            class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="ap">
           <div class="card-body-t">
             <h5 class="card-title">Colleague</h5>
             <h6 class="card-subtitle">Zizipho C.</h6>
-            <p class="card-text">Abdurahmaan is a good classmate and a friend. He is always eager to help and assist in
+            <p class="card-text-t">Abdurahmaan is a good classmate and a friend. He is always eager to help and assist in
               any way that he can. He is evidently very passionate about coding and everything attached to it, it is
               contagious when you are around him. He is selfless with his time and is always willing to lend a hand when
               he can. He is a great problem solver, as he leaves no stones unturned until he finds a solution.</p>
@@ -234,46 +233,45 @@
         </div>
         <div class="card col-md-4">
           <img src="https://achar1f.github.io/projectimages/images/sipho.png"
-            class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="dp">
+            class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="ap">
           <div class="card-body-t">
             <h5 class="card-title">Colleague</h5>
             <h6 class="card-subtitle">Sipho </h6>
-            <p class="card-text">I am very honoured to give a testimony on Abdurahmaan.In the times that I have worked
+            <p class="card-text-t">I am very honoured to give a testimony on Abdurahmaan.In the times that I have worked
               alongside him, he has shown a lot of dedication. He is self-driven to do better, and he always works hard
               to achieve better results.</p>
           </div>
         </div>
         <div class="card col-md-4">
           <img src="https://achar1f.github.io/projectimages/images/imraans.png"
-            class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="dp">
+            class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="ap">
           <div class="card-body-t">
             <h5 class="card-title">Colleague.</h5>
             <h6 class="card-subtitle">Imraan S.</h6>
-            <p class="card-text">Abdurahmaan embodies the epitome of dedication and reliability in the workplace. His
+            <p class="card-text-t">Abdurahmaan embodies the epitome of dedication and reliability in the workplace. His
               intelligence, diligence, and unwavering commitment to improving his work set a commendable standard for
               his peers. Although he's readiness to contribute when needed underscores his reliability and dedication to
-              team success. He is truly a rare gem, combining exceptional competence with integrity and kindness,
-              enriching any team lucky enough to have him.</p>
+              team success. He is truly a rare gem.</p>
           </div>
         </div>
         <div class="card col-md-4">
           <img src="https://achar1f.github.io/projectimages/images/keenan.png"
-            class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="dp">
+            class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="ap">
           <div class="card-body-t">
             <h5 class="card-title">Colleague</h5>
             <h6 class="card-subtitle">Keenan T.</h6>
-            <p class="card-text">Abdurahmaan is an insightful individual who is always eager to answer any question that
+            <p class="card-text-t">Abdurahmaan is an insightful individual who is always eager to answer any question that
               is thrown at him. He is always seen hard at work never letting anything distract him until the work is
               done. He brings commitment and determination into anything he puts his mind to.</p>
           </div>
         </div>
         <div class="card col-md-4">
           <img src="https://achar1f.github.io/projectimages/images/ismaeel.png"
-            class="card-img-top img-fluid img-thumbnail" loading="lazy" alt="dp">
+            class="card-img-top img-fluid img-thumbnail" loading="lazy" alt="ap">
           <div class="card-body-t">
             <h5 class="card-title">Colleague</h5>
             <h6 class="card-subtitle">Ismaeel A.</h6>
-            <p class="card-text">He exemplifies remarkable qualities among his peers, consistently offering insightful
+            <p class="card-text-t">He exemplifies remarkable qualities among his peers, consistently offering insightful
               pearls of wisdom. With a refined eloquence, he engages with others effortlessly and fosters harmonious
               relationships. His willingness to extend a helping hand to those around him is commendable. The breadth of
               his potential appears boundless.</p>
@@ -281,11 +279,11 @@
         </div>
         <div class="card col-md-4">
           <img src="https://achar1f.github.io/projectimages/images/joel2.jpg"
-            class="card-img-top img-fluid img-thumbnail" loading="lazy" alt="dp">
+            class="card-img-top img-fluid img-thumbnail" loading="lazy" alt="ap">
           <div class="card-body-t">
             <h5 class="card-title">Lecturer</h5>
             <h6 class="card-subtitle">Joel M.</h6>
-            <p class="card-text">Abdurahmaan is a highly creative, well-behaved, and dedicated individual who thrives on
+            <p class="card-text-t">Abdurahmaan is a highly creative, well-behaved, and dedicated individual who thrives on
               collaborating with his peers and excels at working on project assignments. He has acquired various skills
               and tools, including HTML5, CSS3, Bootstrap, VS Code, and wireframe. I am pleased to introduce him as an
               exceptional candidate and developer.</p>
@@ -299,53 +297,51 @@
         <h2>Reach Me</h2>
       </div>
       <div class="row reachMeForm">
-        <div class="col">
+        <div>
           <form action="https://formspree.io/f/xeqyndla" method="POST" class="rmform">
-            <h4>Contact Me</h4>
             <label>
               Your name:
-              <input type="text" name="name" />
+              <input type="text" name="name" placeholder="Full Name" />
             </label>
             <label>
               Your email:
-              <input type="email" name="email" />
+              <input type="email" name="email" placeholder="Email address" />
             </label>
             <label>
               Message:
-              <textarea name="message"></textarea>
+              <textarea name="message" id="message" placeholder="Let me know your thoughts"></textarea>
             </label>
-            <div class="formbuttons">
+            <div class="formbuttons mb-2">
               <button type="submit" target="_blank">Send</button>
               <button type="reset">Clear</button>
             </div>
           </form>
           <!-- contact details -->
         </div>
-        <div class="col">
           <aside class="container">
             <div class="row">
-              <div class="col-2">
+              <div>
                 <i class="bi bi-telephone-inbound"></i>
               </div>
-              <div class="col">
+              <div>
                 <p>Cell number: 076 983 2333</p>
               </div>
 
             </div>
             <div class="row">
-              <div class="col-2">
+              <div>
 
                 <i class="bi bi-envelope-at-fill"></i>
               </div>
-              <div class="col">
+              <div>
                 <p>Email: acharif41@gmail.com</p>
               </div>
             </div>
             <div class="row">
-              <div class="col-2">
+              <div>
                 <i class="bi bi-github"></i>
               </div>
-              <div class="col">
+              <div >
                 <a class="github-profile" href="https://github.com/AChar1f" target="_blank">My Github</a>
               </div>
             </div>
