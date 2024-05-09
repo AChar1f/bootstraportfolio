@@ -19,6 +19,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>My Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link
@@ -62,10 +64,10 @@
               <a class="nav-link" href="#resume">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#reachMe">Reach Me</a>
@@ -91,24 +93,27 @@
         </div>
       </section>
       <!-- About -->
-      <section class="container-fluid" id="about">
-        <!-- <div class="row aboutbg">
+      <section class="container" id="about">
+        <div id="bg-opacity"></div>
+        <div class="row aboutbg">
           <div class="col-md-10">
-          <h2>About</h2>
+          <h2 class="display-3">About</h2>
           <h4>Who is Abdurahmaan?</h4>
           <div>
-            <p class="aboutMe">Abdurahmaan is a highly-disciplined and driven young man that resides in Cape Town, Surrey Estate. A brother to many and a teacher to some, my journey embodies resilience and a commitment to self-improvement. Graduating from Leadership College Primrose Park in 2019, I pursued excellence by rewriting my matric exams in 2020, achieving a bachelor's pass. My determination led me to explore various fields before securing my first job as an Educator Assistant at Habibia Primary School in late 2021. This experience not only enhanced my professional skills but also nurtured personal growth. Despite the contract ending after 11 months, I remained undeterred, transitioning to a role as a cross-trained Sales Executive at YDE and Truworths, where I honed my sales acumen and reignited my passion for technology. Departing in mid-2023, I embarked on a new chapter by discovering Life Choices, a opportunity poised to further enrich my journey of learning and development in the technolgical field.</p>
+            <p class="aboutMe">Abdurahmaan is a highly-disciplined and driven young man that resides in Cape Town, Surrey Estate. A brother to many and a teacher to some, my journey embodies resilience and a commitment to self-improvement. Graduating from Leadership College Primrose Park in 2019, I pursued excellence by rewriting my matric exams in 2020, achieving a bachelor's pass. My determination led me to explore various fields before securing my first job as an Educator Assistant at Habibia Primary School in late 2021. This experience not only enhanced my professional skills but also nurtured personal growth. Remaining undeterred, I transitioned to the role of a cross-trained Sales Executive at YDE and Truworths, where I honed my sales acumen. Departing in mid-2023 I reignited my passion for technology and embarked on a new chapter, later discovering Life Choices , a opportunity poised to further enrich my journey of learning and development in the technolgical field</p>
           </div>
         </div>
-        </div> -->
+        </div>
       </section>
-      <!-- Skills -->
-      <section class="container" id="skils">
+      
+              <!-- Skills -->
+      <section class="container" id="skills" >
        
         <div class="container">
           <div class="row">
               <div id="table-wrapper">
                   <table class="table table-md table-responsive">
+                    <h2>Skills</h2>
                       <thead>
                           <tr>
                               <th>Problem-Solving<i class="bi bi-gear-wide-connected"></i></th>
@@ -133,20 +138,23 @@
       </div>
       
       </section>
-      <!-- Resume -->
+     
+               <!-- Resume -->
       <section class="container" id="resume">
         <div class="row resumecontainer text-center">
           <h2>Resume</h2>
         </div>
-        <div class="col d-flex justify-content-end"><button type="button" id="cvbtn">Download CV</button></div>
-        <div class="row redu">
-          <div class="col-md-6 d-flex justify-content-start align-items-center flex-column">
-            <h4>Education</h4>
-            <h5>2015-2019</h5>
-            <p>Matriculated in 2019 from The Leadership College High School</p>
-            <h5>2020-2020</h5>
-            <p>Rewrote and Obtained a Bachelor Pass for Matric</p>
-          </div>
+        <div class="col d-flex justify-content-end">
+          <button type="button" id="cvbtn">Download CV</button>
+        </div>
+          <div class="row redu my-2">
+            <div class="col-md-6 d-flex justify-content-start align-items-center flex-column">
+              <h4>Education</h4>
+              <h5>2015-2019</h5>
+              <p>Matriculated in 2019 from The Leadership College High School</p>
+              <h5>2020-2020</h5>
+              <p>Rewrote and Obtained a Bachelor Pass for Matric</p>
+            </div>
           <div class="col-md-6 d-flex justify-content-start align-items-center flex-column">
             <h4>Work Experience</h4>
                   <h5>Nov 2021 - Sept 2022</h5>
@@ -208,58 +216,64 @@
             <div class="card-body">
               <h5 class="card-title">Hulu Clone</h5>
               <p class="card-text">Hulu site frame.</p>
-              <a href="https://github.com/AChar1f/huluapp.git" class="btn bg-light">GitHub</a>
-                <a href="https://vercel.com/abdurahmaan-charifs-projects/huluapp/6xXcifZmt2GmX166Lrc2DurHpuho" class="btn bg-light">Vercel</a>
+              <a href="https://github.com/AChar1f/huluapp.git" target="_blank" class="btn bg-light">GitHub</a>
+                <a href="https://huluapp-a4hht69lb-abdurahmaan-charifs-projects.vercel.app/" target="_blank" class="btn bg-light">Vercel</a>
             </div>
           </div>
       </section>
-      <!-- Testimonials -->
+      
+        <!-- Testimonials -->
       <section class="container" id="testimonials">
-        <div class="row">
+        <div class="row text-center my-5">
           <h2>Testimonials</h2>
         </div>
-
-<div class="row gy-4">
-  <div class="card col-md-4">
-    <img src="https://achar1f.github.io/projectimages/images/ziziphoc.png" class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="dp">
-    <div class="card-body-t">
-      <h5 class="card-title">Zizipho C.</h5>
-      <p class="card-text">Abdurahmaan is a good classmate and a friend. He is always eager to help and assist in any way that he can. He is evidently very passionate about coding and everything attached to it, it is contagious when you are around him. He is selfless with his time and is always willing to lend a hand when he can. He is a great problem solver, as he leaves no stones unturned until he finds a solution.</p> 
-    </div>
-  </div>
-  <div class="card col-md-4">
-    <img src="https://achar1f.github.io/projectimages/images/sipho.png" class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="dp">
-    <div class="card-body-t">
-      <h5 class="card-title">Sipho </h5>
-      <p class="card-text">I am very honoured to give a testimony on Abdurahmaan.In the times that I have worked alongside him, he has shown a lot of dedication. He is self-driven to do better, and he always works hard to achieve better results.</p>
-    </div>
-  </div>
+              <div class="row gy-4">
+                  <div class="card col-md-4">
+                      <img src="https://achar1f.github.io/projectimages/images/ziziphoc.png" class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="dp">
+                          <div class="card-body-t">
+                               <h5 class="card-title">Colleague</h5>
+                               <h6 class="card-subtitle">Zizipho C.</h6>
+                                  <p class="card-text">Abdurahmaan is a good classmate and a friend. He is always eager to help and assist in any way that he can. He is evidently very passionate about coding and everything attached to it, it is contagious when you are around him. He is selfless with his time and is always willing to lend a hand when he can. He is a great problem solver, as he leaves no stones unturned until he finds a solution.</p> 
+                          </div>
+                    </div>
+       <div class="card col-md-4">
+         <img src="https://achar1f.github.io/projectimages/images/sipho.png" class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="dp">
+        <div class="card-body-t">
+          <h5 class="card-title">Colleague</h5>
+          <h6 class="card-subtitle">Sipho </h6>
+          <p class="card-text">I am very honoured to give a testimony on Abdurahmaan.In the times that I have worked alongside him, he has shown a lot of dedication. He is self-driven to do better, and he always works hard to achieve better results.</p>
+        </div>
+      </div>
   <div class="card col-md-4">
     <img src="https://achar1f.github.io/projectimages/images/imraans.png" class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="dp">
     <div class="card-body-t">
-      <h5 class="card-title">Imraan S.</h5>
+      <h5 class="card-title">Colleague.</h5>
+      <h6 class="card-subtitle">Imraan S.</h6>
       <p class="card-text">Abdurahmaan embodies the epitome of dedication and reliability in the workplace. His intelligence, diligence, and unwavering commitment to improving his work set a commendable standard for his peers. Although he's readiness to contribute when needed underscores his reliability and dedication to team success. He is truly a rare gem, combining exceptional competence with integrity and kindness, enriching any team lucky enough to have him.</p>
     </div>
   </div>
   <div class="card col-md-4">
     <img src="https://achar1f.github.io/projectimages/images/keenan.png" class="card-img-top img-thumbnail img-fluid" loading="lazy" alt="dp">
     <div class="card-body-t"> 
-      <h5 class="card-title">Keenan T.</h5>
+      <h5 class="card-title">Colleague</h5>
+      <h6 class="card-subtitle">Keenan T.</h6>
       <p class="card-text">Abdurahmaan is an insightful individual who is always eager to answer any question that is thrown at him. He is always seen hard at work never letting anything distract him until the work is done. He brings commitment and determination into anything he puts his mind to.</p>
     </div>
   </div>
   <div class="card col-md-4">
     <img src="https://achar1f.github.io/projectimages/images/ismaeel.png" class="card-img-top img-fluid img-thumbnail" loading="lazy" alt="dp">
     <div class="card-body-t">
-      <h5 class="card-title">Ismaeel A.</h5>
+      <h5 class="card-title">Colleague</h5>
+      <h6 class="card-subtitle">Ismaeel A.</h6>
       <p class="card-text">He exemplifies remarkable qualities among his peers, consistently offering insightful pearls of wisdom. With a refined eloquence, he engages with others effortlessly and fosters harmonious relationships. His willingness to extend a helping hand to those around him is commendable. The breadth of his potential appears boundless.</p>
     </div>
    </div>
   <div class="card col-md-4">
-    <img src="https://achar1f.github.io/projectimages/images/ismaeel.png" class="card-img-top img-fluid img-thumbnail" loading="lazy" alt="dp">
+    <img src="https://achar1f.github.io/projectimages/images/joel2.jpg" class="card-img-top img-fluid img-thumbnail" loading="lazy" alt="dp">
     <div class="card-body-t">
-      <h5 class="card-title">Ismaeel A.</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <h5 class="card-title">Lecturer</h5>
+      <h6 class="card-subtitle">Joel M.</h6>
+      <p class="card-text">Abdurahmaan is a highly creative, well-behaved, and dedicated individual who thrives on collaborating with his peers and excels at working on project assignments. He has acquired various skills and tools, including HTML5, CSS3, Bootstrap, VS Code, and wireframe. I am pleased to introduce him as an exceptional candidate and developer.</p>
     </div>
    </div>
   </div>
