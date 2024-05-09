@@ -85,14 +85,35 @@ img[alt='profileImage'] {
 }
 
 /* About */
-/* .aboutbg {
-    background-image: url(https://achar1f.github.io/projectimages/images/about-bg.jpg);
-    background-repeat: no-repeat;
+#about {
+    position: relative;
+    height: 100vh;
+}
+#bg-opacity {
+    position: absolute;
+    background: rgb(93, 90, 90) url("https://achar1f.github.io/projectimages/images/about-bg.jpg") no-repeat center 30%;
     background-size: cover;
-    height: 100%;
-    color: white;
+    inset: 0;
+    opacity: .3;
+    z-index: -1;
+}
+
+.aboutbg {
+    color: white
     margin-top: 15px;
-} */
+    text-align: center;
+}
+.aboutMe{ 
+    display: flex;
+    flex-flow: column wrap;
+    text-align: end;
+    width: 90%;
+    margin-inline: auto;
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: var(--mainBox-shadow);
+    border-radius: .5rem;
+    font-size: small;
+}
 
 #table-wrapper {
     width: 100%;
@@ -105,6 +126,7 @@ img[alt='profileImage'] {
     text-align: center;
     font-size: medium;
 }
+
 tr,
 td,
 th {
@@ -186,7 +208,7 @@ img[alt='dp'] {
     background-color:rgb(33, 42, 42);
     color: white;
     font-size: x-small;
-    height: 13rem;
+    height: 14rem;
     border: 5px double #A29D95;
     
    
@@ -268,3 +290,7 @@ label {
     background-image: linear-gradient(180deg, black 50%,#232323) ;
 
 }
+
+
+.ha {text-align: center;}
+
