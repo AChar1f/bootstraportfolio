@@ -199,23 +199,6 @@ img[alt='sp'] {
     height: 260px;
 }
 
-#table-wrapper {
-    width: 100%;
-    margin: 1rem auto 1rem;
-    padding-block: 1rem;
-    background-color: #232323;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    text-align: center;
-    font-size: medium;
-}
-
-tr,
-td,
-th {
-    border: 2px solid silver;  
-}
 
 /* Resume */
 #resume {
